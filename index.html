@@ -9,24 +9,32 @@
 <body>
     <div class="card">
         <h1>Добавить пользователя</h1>
-
+       
+        <div>
         <form id="userForm">
          <lable>Имя</lable>
          <input name="name" required/>
+        </div>
 
+        <div>
          <lable>Фамилия</lable>
          <input name="lastname" required/>
+        </div>
 
+        <div>
          <lable>День рождения</lable>
          <input name="birhday" type="date" required/>
+        </div>
 
+        <div>
          <lable>ID группы</lable>
          <input name="group_id" type="number" min="1" step="1" required/>
+        </div>
 
-         <form action="lib.html">
-         <button type="submit">Сохранить</button>
-         </form>
-
+        <div>
+        <a href="library.html" class="">
+        <button type="submit">Сохранить</button></a>
+        </div>
         </form>
     </div>
 
