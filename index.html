@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="./styles/index.css"/>
 </head>
 <body>
+    <div class="body1">
     <div class="card">
-        <h1>Добавить пользователя</h1>
+        <h1>Зарегистрироваться</h1>
        
         <div>
         <form id="userForm">
-         <lable>Имя</lable>
+         <lable class="pole">Имя</lable>
          <input name="name" required/>
         </div>
 
         <div>
-         <lable>Фамилия</lable>
+         <lable class="pole">Фамилия</lable>
          <input name="lastname" required/>
         </div>
 
         <div>
-         <lable>День рождения</lable>
+         <lable class="pole">День рождения</lable>
          <input name="birhday" type="date" required/>
         </div>
 
         <div>
-         <lable>ID группы</lable>
-         <input name="group_id" type="number" min="1" step="1" required/>
-        </div>
-
-        <div>
-        <a href="library.html" class="">
-        <button type="submit">Сохранить</button></a>
+        <button>
+        <a href="library.html" class="">Сохранить</button>
+        </a>
         </div>
         </form>
-    </div>
+        
+        <button class="vxod">Уже есть аккаунт 
+        <a href="library.html" class="">Вход</a>
+        </button>
 
+    </div>
+    </div>
+    
     <script src="./scripts/library.js"></script>
 </body>
 

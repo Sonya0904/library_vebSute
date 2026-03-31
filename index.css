@@ -3,5 +3,39 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 
+h1{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 46px;
+  padding-bottom: 40px;
+}
+
+.pole{
+    font-family: "Times, Times New Roman", serif;
+  font-optical-sizing: auto;
+  /* font-weight: bold; */
+  font-style: normal;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.body1{
+  background-image: url('./images/Fon.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fffdfd;
+}
+
+.vxod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
