@@ -12,7 +12,9 @@ h1{
   font-weight: bold;
   font-style: normal;
   font-size: 46px;
-  padding-bottom: 40px;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  color: antiquewhite;
 }
 
 .pole{
@@ -24,18 +26,46 @@ h1{
   padding-bottom: 40px;
 }
 
-.body1{
-  background-image: url('./images/Fon.jpg');
+body{
+  background-image: url(../images/CCC.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #fffdfd;
+  /* background-color: #ffffff; */
 }
 
-.vxod{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.btn{
+  background-color: rgb(255, 235, 209);
+}
+
+.a{
+  color: rgb(184, 107, 0);
+}
+
+.otst{
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+}
+
+.ochert{
+  padding: 60px;
+  border-color: rgba(255, 230, 197, 0.567);
+  background-color: antiquewhite;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+
+.input_wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.input {
+  padding: 15px 10px;
+  height: 20px;
+  border-radius: 5px;
 }
