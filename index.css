@@ -12,7 +12,7 @@ h1{
   font-weight: bold;
   font-style: normal;
   font-size: 46px;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
   color: antiquewhite;
 }
 
@@ -39,6 +39,7 @@ body{
   background-color: rgb(255, 235, 209);
   width: 150px;
   height: 35px;
+  margin-top: 10px;
 }
 
 #btn{
