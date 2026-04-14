@@ -11,21 +11,19 @@ body{
     text-align: left;
     font-size: 20px;
     background-image: url('Без названия.jpg');
-    /* background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center; */
 }
 
 .kartochki{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    height: 430px;
 }
 
 .card-img-top{
     width: 14rem; 
-    height: 310px;
+    height: 290px;
 }
 
 .navbar {
