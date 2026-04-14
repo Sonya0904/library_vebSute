@@ -16,17 +16,19 @@
  <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Main</a>
+    <a href="library.html" class="nav-link" style="text-decoration: underline;">Main</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar" id="resultsList">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">reviews</a>
+          <a href="reviews.html" class="nav-link">
+          reviews</a>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">audio</a>
+          <a href="vxod.html" class="nav-link">account</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,12 +41,9 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
@@ -52,37 +51,93 @@
 </nav>
       </header>
         
+      
       <h1>The most popular</h1>
 <div class="kartochki">
-     <div class="card" style="width: 14rem;"> <img src="./images/litte.jpg" class="card-img-top" alt="Ko">
+     <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <img src="./images/litte.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">The little prince</h5>
-      <p class="card-text">Описание</p>
-      <a href="#" class="btn btn-primary">Читать</a>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <img src="./images/PandP.jpg" class="card-img-top" alt="Ko">
+      <div class="card" style="width: 14rem;"> <a href="pride.html" class="">
+      <img src="./images/PandP.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">Pride and prejudice</h5>
-      <p class="card-text">Описание</p>
-      <a href="#" class="btn btn-primary">Читать</a>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <img src="./images/wom.jpg" class="card-img-top" alt="Ko">
+      <div class="card" style="width: 14rem;"> <img src="./images/wom.jpg" class="card-img-top">
       <div class=" card-body">
       <h5 class="card-title">Little women</h5>
-      <p class="card-text">Описание</p>
-      <a href="#" class="btn btn-primary">Читать</a>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <img src="./images/wom.jpg" class="card-img-top" alt="Ko">
+      <div class="card" style="width: 14rem;"> <img src="./images/13651011_1_1984.jpg" class="card-img-top">
       <div class=" card-body">
-      <h5 class="card-title">Little women</h5>
-      <p class="card-text">Описание</p>
-      <a href="#" class="btn btn-primary">Читать</a>
+      <h5 class="card-title">1984</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <img src="./images/Без названия (1).jpg" class="card-img-top">
+      <div class=" card-body">
+      <h5 class="card-title">Harry Potter</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <img src="./images/Без названия (4).jpg" class="card-img-top">
+      <div class=" card-body">
+      <h5 class="card-title">Harry Potter</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <img src="./images/m&m.jpg" class="card-img-top"></a>
+      <div class=" card-body">
+      <h5 class="card-title">The Master and Margarita</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <img src="./images/R&J.jpg" class="card-img-top"></a>
+      <div class=" card-body">
+      <h5 class="card-title">Romeo and Juliet</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <img src="./images/Без названия (6).jpg" class="card-img-top"></a>
+      <div class=" card-body">
+      <h5 class="card-title">The Count of Monte Cristo</h5>
+      <p class="card-text">Description</p>
+      <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <img src="./images/Без названия (7).jpg" class="card-img-top"></a>
+      <div class=" card-body">
+      <h5 class="card-title">Crime and Punishment</h5>
+      <p class="card-text">Description</p>
+      <a href="
+      " class="btn btn-primary">Reviews</a>
       </div>
       </div>
 </div>
@@ -91,3 +146,4 @@
 </body>
 
   </html>
+  

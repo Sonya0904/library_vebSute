@@ -20,9 +20,34 @@ body{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card-img-top{
-    width: 14rem;
+    width: 14rem; 
     height: 310px;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.card-title{
+    height: 55px;
+}
+
+body{
+  background-color: #e9f4ff;
+}
+
+.btn-outline-success {
+ border-color: #a5dafd;
+ color: #a5dafd;
+ 
+}
+
+.btn-outline-success:hover{
+ color: #000000;
+ background-color: #a5dafd;
+ border-color: #a5dafd;
 }
