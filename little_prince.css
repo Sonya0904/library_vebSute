@@ -1,0 +1,30 @@
+.imag_osnov{
+    margin-top: 35px;
+}
+
+p{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.summary{
+    margin-top: 55px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-img-top{
+    width: 14rem;
+    height: 310px;
+}
+
+.btn_btn-primary{
+   
+}
