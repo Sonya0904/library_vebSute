@@ -1,3 +1,55 @@
+h1{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 66px;
+  padding-bottom: 40px;
+}
+
+body{
+    text-align: left;
+    font-size: 20px;
+    background-image: url('Без названия.jpg');
+}
+
+.kartochki{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    height: 430px;
+}
+
+.card-img-top{
+    width: 14rem; 
+    height: 290px;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.card-title{
+    height: 55px;
+}
+
+body{
+  background-color: #e9f4ff;
+}
+
+.btn-outline-success {
+ border-color: #a5dafd;
+ color: #a5dafd;
+ 
+}
+
+.btn-outline-success:hover{
+ color: #000000;
+ background-color: #a5dafd;
+ border-color: #a5dafd;
+}
+
 .burger {
     cursor: pointer;
     display: flex;
@@ -20,3 +72,66 @@
    .menu.active {
     display: block; 
    }
+
+   .ochert{
+  padding: 60px;
+  border-color: rgba(134, 184, 245, 0.567);
+  background-color: #aedfff;
+  border-radius: 3.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+
+.pole{
+  font-family: "Times, Times New Roman", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.input_wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.textarea_wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.input {
+  padding: 12px 7px;
+  height: 7px;
+  border-radius: 5px;
+}
+
+.menu {
+ display: none;
+}
+
+.menu.active {
+ display: block; 
+}
+
+body.dark-theme {
+ background-color: #696969;
+ color: #e9f4ff;
+}
+body {
+  background-color: #e9f4ff;
+  color: #000000
+}
+
+#main{
+    color: #000000;
+}
+
+.tema{
+    width: 50px;
+    height: 50px;
+    align-self:center;
+}

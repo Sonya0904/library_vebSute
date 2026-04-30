@@ -64,3 +64,12 @@ burger.addEventListener('click', () => {
   menu.classList.toggle('active');
   burger.classList.toggle('active');
 });
+
+const btn = document.querySelector(".btn-toggle");
+btn.addEventListener("click", function() {
+  document.body.classList.toggle("dark-theme");
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-theme');
+}
