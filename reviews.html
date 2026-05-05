@@ -13,91 +13,103 @@
         <!-- <link rel="stylesheet" href="./styles/library.css"> -->
         <link rel="stylesheet" href="./styles/reviews.css">
     </head>
-  <body class="container">
-   <header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="header">
-              <div class="burger" id="burger">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-              </div>
-              <nav class="menu" id="menu">
-                <ul>
-                  <li><a href="#" class="nav-link">Художественная литература</a></li>
-                  <li><a href="#" class="nav-link">Детективы</a></li>
-                  <li><a href="#" class="nav-link">Триллеры</a></li>
-                  <li><a href="#" class="nav-link">Научно-популярная</a></li>
-                  <li><a href="#" class="nav-link">Биографии</a></li>
-                  <li><a href="#" class="nav-link">Фантастика</a></li>
-                  <li><a href="#" class="nav-link">Фэнтези</a></li>
-                  <li><a href="#" class="nav-link">Ужасы</a></li>
-                  <li><a href="#" class="nav-link">Преключения</a></li>
-                  </ul>
-              </nav>
+<body class="container">
+ <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="header">
+            <div class="burger" id="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
             </div>
-  
-
-    <div class="container-fluid">
-      <a href="library.html" class="nav-link">Main</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <nav class="menu"  id="menu">
+              <ul>
+                <li><a href="#" class="nav-link">Художественная литература</a></li>
+                <li><a href="#" class="nav-link">Детективы</a></li>
+                <li><a href="#" class="nav-link">Триллеры</a></li>
+                <li><a href="#" class="nav-link">Научно-популярная</a></li>
+                <li><a href="#" class="nav-link">Биографии</a></li>
+                <li><a href="#" class="nav-link">Фантастика</a></li>
+                <li><a href="#" class="nav-link">Фэнтези</a></li>
+                <li><a href="#" class="nav-link">Ужасы</a></li>
+                <li><a href="#" class="nav-link">Преключения</a></li>
+                </ul>
+            </nav>
+          </div>
+  <div class="container-fluid">
+    <a href="library.html" class="nav-link" style="text-decoration: underline;" id="main">Main</a>
+    <button class="navbar-toggler" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar" id="resultsList">
+        <li class="nav-item">
+          <a href="reviews.html" class="nav-link">
+          reviews</a>
+          </a>
+        </li>
+    
+        <li class="nav-item">
+          <a href="vxod.html" class="nav-link">account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> 
+      </ul>  
+      <button class="btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="images/sun.jpg" class="tema">
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar" id="resultsList">
-          <li class="nav-item">
-            <a href="reviews.html" class="nav-link" style="text-decoration: underline;">
-            reviews</a>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="vxod.html" class="nav-link">account</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-        </header>
-   
 
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+      </header>
+   
+  <form id="reviesForm">
+          <div class="ochert">
+                  <div class="input_wrapper">
+                  <lable class="pole">Имя</lable>
+                  <input name="name" class="input" required/>
+                  </div>
+
+                  <div class="input_wrapper">
+                  <lable class="pole" class="otst">Фамилия</lable>
+                  <input name="lastname"  class="input" required/>
+                  </div>
+
+                  <div class="textarea_wrapper">
+                  <lable class="pole" class="otst">Отзыв</lable>
+                  <textarea name="rewiews"  class="input" required></textarea>
+                  </div>
+          <div>
+          <span onclick="gfg(1)" class="star">★</span>
+          <span onclick="gfg(2)" class="star">★</span>
+          <span onclick="gfg(3)" class="star">★</span>
+          <span onclick="gfg(4)" class="star">★</span>
+          <span onclick="gfg(5)" class="star">★</span>
+          <h3 id="output">Rating is: 0/5</h3>
+        </div>
+          </div>
+      </form> 
+      
+      
 
 </body>
 
-     <form id="reviesForm">
-        <div class="ochert">
-                <div class="input_wrapper">
-                <lable class="pole">Имя</lable>
-                <input name="name" class="input" required/>
-                </div>
-
-                <div class="input_wrapper">
-                <lable class="pole" class="otst">Фамилия</lable>
-                <input name="lastname"  class="input" required/>
-                </div>
-
-                <div class="textarea_wrapper">
-                <lable class="pole" class="otst">Отзыв</lable>
-                <textarea name="rewiews"  class="input" required></textarea>
-                </div>
-        </div>
-     </form>
-
-     <script src="./scripts/library.js"></script>
+     
+<script src="./scripts/library.js"></script>
+    
 
 </html>

@@ -91,3 +91,5 @@ body {
     height: 50px;
     align-self:center;
 }
+
+.is-hidden { display: none; }
