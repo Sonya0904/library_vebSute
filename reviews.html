@@ -37,14 +37,14 @@
             </nav>
           </div>
   <div class="container-fluid">
-    <a href="library.html" class="nav-link" style="text-decoration: underline;" id="main">Main</a>
+    <a href="library.html" class="nav-link"  id="main">Main</a>
     <button class="navbar-toggler" >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar" id="resultsList">
         <li class="nav-item">
-          <a href="reviews.html" class="nav-link">
+          <a href="reviews.html" class="nav-link" style="text-decoration: underline;">
           reviews</a>
           </a>
         </li>
@@ -69,8 +69,11 @@
       </button>
 
       <form class="d-flex" role="search">
-        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <label for="searchbox">Search</label>
+        <input 
+      type="search" 
+      oninput="liveSearch()" 
+      id="searchbox">
       </form>
     </div>
   </div>
@@ -93,14 +96,20 @@
                   <lable class="pole" class="otst">Отзыв</lable>
                   <textarea name="rewiews"  class="input" required></textarea>
                   </div>
-          <div>
-          <span onclick="gfg(1)" class="star">★</span>
-          <span onclick="gfg(2)" class="star">★</span>
-          <span onclick="gfg(3)" class="star">★</span>
-          <span onclick="gfg(4)" class="star">★</span>
-          <span onclick="gfg(5)" class="star">★</span>
-          <h3 id="output">Rating is: 0/5</h3>
-        </div>
+                  <div>
+                  <span onclick="gfg(1)" class="star">★</span>
+                  <span onclick="gfg(2)" class="star">★</span>
+                  <span onclick="gfg(3)" class="star">★</span>
+                  <span onclick="gfg(4)" class="star">★</span>
+                  <span onclick="gfg(5)" class="star">★</span>
+                  <h3 id="output">Rating is: 0/5</h3>
+                </div>
+            
+                <div id="btn">
+                <button class="btn" >
+                <a href="library.html" class="a">Сохранить</button>
+                </a>
+        
           </div>
       </form> 
       

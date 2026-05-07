@@ -7,12 +7,6 @@ h1{
   padding-bottom: 40px;
 }
 
-body{
-    text-align: left;
-    font-size: 20px;
-    background-image: url('Без названия.jpg');
-}
-
 .kartochki{
     display: flex;
     flex-direction: row;
@@ -32,10 +26,6 @@ body{
 
 .card-title{
     height: 55px;
-}
-
-body{
-  background-color: #e9f4ff;
 }
 
 .btn-outline-success {
@@ -73,23 +63,37 @@ body{
  display: block; 
 }
 
-body.dark-theme {
+body.dark-theam {
  background-color: #696969;
- color: #e9f4ff;
+ color: #121212;
 }
+
+body.dark-theam #sun { display: none; }
+body.dark-theam #moon { display: inline-block; }
+
 body {
   background-color: #e9f4ff;
-  color: #000000
+  color: #000000;
+  text-align: left;
+  font-size: 20px;
 }
 
 #main{
     color: #000000;
 }
 
-.tema{
+.team{
     width: 50px;
     height: 50px;
     align-self:center;
+}
+
+#sun{
+   display: inline-block;
+}
+
+#moon{
+   display: none;
 }
 
 .is-hidden { display: none; }
