@@ -7,7 +7,7 @@ h1{
   padding-bottom: 40px;
 }
 
-.kartochki{
+.books{
     display: flex;
     flex-direction: row;
     gap: 30px;

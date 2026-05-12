@@ -6,7 +6,41 @@ let books = [
         evaluation: 4.7,
         image: "./images/litte.jpg"
     },
+    {
+        title: "Little women",
+        author: " Louisa May Alcott ",
+        year: 1888,
+        evaluation: 4.7,
+        image: "./images/wom.jpg"
+    },
+    {
+        title: "Pride and Prejudice",
+        author: " Jane Austen",
+        year: 1817,
+        evaluation: 4.7,
+        image: "./images/PandP.jpg"
+    },
+    {
+        title: "Harry Potter",
+        author: "J.K. Rowling",
+        year: 1997,
+        evaluation: 4.7,
+        image: "./images/harry.jpg"
+    },
+    {
+        title: "The little prince",
+        author: "Antoine de Saint-Exupéry",
+        year: 1942,
+        evaluation: 4.7,
+        image: "./images/litte.jpg"
+    },
 ];
+
+
+
+
+
+
 
 // function addBookToLibrary(title, author) {
 //     const book = { title, author };
