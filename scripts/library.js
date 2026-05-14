@@ -116,3 +116,29 @@ function liveSearch() {
   }
 }
 
+async function getBook(){
+  
+}
+
+
+fetch('https://127.0.0.1:5500')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Ошибка', error));
+
+
+// POST-запрос с JSON-данными
+fetch('https://127.0.0.1:5500', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify({
+name: 'Пользователь',
+password: 'Sonya_904'
+})
+})
+.then(response => response.json())
+.then(data => console.log('Успешный ответ:', data))
+.catch(error => console.error('Ошибка:', error));
+
