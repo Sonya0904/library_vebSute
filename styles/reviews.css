@@ -62,10 +62,13 @@
    
 }
 
-body.dark-theme {
+body.dark-team {
  background-color: #696969;
- color: #fdfeff;
+ color: #121212;
 }
+
+body.dark-team #sun { display: none; }
+body.dark-team #moon { display: inline-block; }
 body {
   background-color: #e9f4ff;
   color: #000000;
@@ -88,6 +91,18 @@ body {
     height: 50px;
     align-self:center;
 }
+
+#sun{
+   display: inline-block;
+}
+
+#moon{
+   display: none;
+}
+
+
+.is-hidden { display: none; }
+
 
 
 * {

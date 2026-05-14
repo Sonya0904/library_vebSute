@@ -63,13 +63,13 @@ h1{
  display: block; 
 }
 
-body.dark-theam {
+body.dark-team {
  background-color: #696969;
  color: #121212;
 }
 
-body.dark-theam #sun { display: none; }
-body.dark-theam #moon { display: inline-block; }
+body.dark-team #sun { display: none; }
+body.dark-team #moon { display: inline-block; }
 
 body {
   background-color: #e9f4ff;

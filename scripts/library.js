@@ -67,11 +67,11 @@ let books = [
 
 const btn = document.querySelector(".btn-toggle");
 btn.addEventListener("click", function() {
-  document.body.classList.toggle("dark-theam");
+  document.body.classList.toggle("dark-team");
 });
 
-if (localStorage.getItem('theam') === 'dark') {
-  document.body.classList.add('dark-theam');
+if (localStorage.getItem('team') === 'dark') {
+  document.body.classList.add('dark-team');
 }
 
 
@@ -121,24 +121,21 @@ async function getBook(){
 }
 
 
-fetch('https://127.0.0.1:5500')
+fetch('https://login')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(error => console.error('Ошибка', error));
 
-
-// POST-запрос с JSON-данными
-fetch('https://127.0.0.1:5500', {
+fetch('https://login', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
 },
 body: JSON.stringify({
 name: 'Пользователь',
-password: 'Sonya_904'
+password: 'SOnya_904'
 })
 })
 .then(response => response.json())
-.then(data => console.log('Успешный ответ:', data))
+.then(data => console.log('Ok:', data))
 .catch(error => console.error('Ошибка:', error));
-
