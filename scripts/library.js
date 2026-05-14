@@ -4,6 +4,7 @@ let books = [
         author: "Antoine de Saint-Exupéry",
         year: 1942,
         evaluation: 4.7,
+        kategoria: "Фэнтези",
         image: "./images/litte.jpg"
     },
     {
@@ -155,21 +156,23 @@ async function getBook(){
 }
 
 
-fetch('https://login')
+fetch('/login')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(error => console.error('Ошибка', error));
 
-fetch('https://login', {
+fetch('/login', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
 },
 body: JSON.stringify({
 name: 'Пользователь',
-password: 'SOnya_904'
+password: 'Sonya_904'
 })
 })
 .then(response => response.json())
 .then(data => console.log('Ok:', data))
 .catch(error => console.error('Ошибка:', error));
+
+

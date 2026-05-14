@@ -10,21 +10,21 @@
     <div class="card">
         <h1>Зарегистрироваться</h1>
         
-        <form id="userForm">
+        <form id="registration" onclick="registration()">
             <div class="ochert">
                 <div class="input_wrapper">
                 <lable class="pole">Имя</lable>
-                <input name="name" class="input" required/>
+                <input name="name" class="input" id="user_name" required/>
                 </div>
 
                 <div class="input_wrapper">
                 <lable class="pole" class="otst">Пароль</lable>
-                <input name="password"  class="input" required/>
+                <input name="password"  class="input" id="user_password" required type="password"/>
                 </div>
 
                 <div class="input_wrapper">
                 <lable class="pole" class="otst">Повторить пароль</lable>
-                <input name="repeat_password"  class="input" required/>
+                <input name="repeat_password"  class="input" id="chek_password" required type="password"/>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
         <a href="vxod.html" class="a">Вход</a>
         </button>
     </div>
-    <script src="./scripts/library.js"></script>
+    <script src="./scripts/vxod.js"></script>
 </body>
 
 </html>
