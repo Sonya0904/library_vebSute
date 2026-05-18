@@ -122,7 +122,7 @@ let output =
     document.getElementById("output");
 
 
-function gfg(n) {
+function stars(n) {
     remove();
     for (let i = 0; i < n; i++) {
         if (n == 1) cls = "one";
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${books.image}" onclick="description('${books.id}')">
                     <h5>${books.title}</h5>                
                     <div>${books.evaluation}</div>                  
-                    <button onclik="reviews">Reviews</button>
+                    <button onclik="reviews('${books.id}')">Reviews</button>
                 `;  //свойство вставить код в html
                 
                 container.appendChild(card); //метод добавленія элемент внутрь card_cont

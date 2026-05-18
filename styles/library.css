@@ -15,6 +15,10 @@ h1{
     height: 430px;
 }
 
+.reviews{display: none;}
+
+.discript{display: none;}
+
 .card-img-top{
     width: 14rem; 
     height: 290px;
