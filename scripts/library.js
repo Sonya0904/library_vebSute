@@ -200,9 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function description(booksId){
-   console.lof(booksId);
+   console.log(booksId);
 }
 
 function reviews(booksId){
-   console.lof(booksId);
+   console.log(booksId);
 }
