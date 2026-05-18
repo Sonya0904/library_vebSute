@@ -5,7 +5,9 @@ let books = [
         year: 1942,
         evaluation: 4.7,
         kategoria: "Фэнтези",
-        image: "./images/litte.jpg"
+        image: "./images/litte.jpg",
+        description: "book about..."
+
     },
     {
         title: "Little women",
@@ -176,3 +178,18 @@ password: 'Sonya_904'
 .catch(error => console.error('Ошибка:', error));
 
 
+
+function cardBook(books){
+
+const container = document.getElementById('book');
+
+  for (let book of books){
+    `<div>
+        <img src="${books.image}" onclick="description">
+        <h5>${books.title}</h5>
+        <div>${books.evaluation}</div>
+        <button onclik="reviews">Reviews</button>
+    </div>`
+    container.innerHTML += 
+  }
+}
