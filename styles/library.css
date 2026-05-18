@@ -7,7 +7,7 @@ h1{
   padding-bottom: 40px;
 }
 
-.books{
+.card_cont{
     display: flex;
     flex-direction: row;
     gap: 30px;

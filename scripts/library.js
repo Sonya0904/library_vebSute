@@ -1,5 +1,6 @@
 let books = [
     {
+        id:1,
         title: "The little prince",
         author: "Antoine de Saint-Exupéry",
         year: 1942,
@@ -10,6 +11,7 @@ let books = [
 
     },
     {
+        id:2,
         title: "Little women",
         author: " Louisa May Alcott ",
         year: 1888,
@@ -17,6 +19,7 @@ let books = [
         image: "./images/wom.jpg"
     },
     {
+        id:3,
         title: "Pride and Prejudice",
         author: " Jane Austen",
         year: 1817,
@@ -158,38 +161,48 @@ async function getBook(){
 }
 
 
-fetch('/login')
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Ошибка', error));
-
-fetch('/login', {
-method: 'POST',
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify({
-name: 'Пользователь',
-password: 'Sonya_904'
-})
-})
-.then(response => response.json())
-.then(data => console.log('Ok:', data))
-.catch(error => console.error('Ошибка:', error));
 
 
 
-function cardBook(books){
+// function cardBook(books){
 
-const container = document.getElementById('book');
+// const container = document.getElementById('book');
 
-  for (let book of books){
-    `<div>
-        <img src="${books.image}" onclick="description">
-        <h5>${books.title}</h5>
-        <div>${books.evaluation}</div>
-        <button onclik="reviews">Reviews</button>
-    </div>`
-    container.innerHTML += 
-  }
+//   for (let book of books){
+//     `<div>
+//         
+//     </div>`
+//     container.innerHTML += 
+//   }
+// }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('Zolotariova_onloneLibrary.php')
+        .then(response => response.json())
+        .then(books => {
+            const container = document.querySelector('.card_cont');
+            
+            books.forEach(book => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                
+                card.innerHTML = `
+                    <img src="${books.image}" onclick="description('${books.id}')">
+                    <h5>${books.title}</h5>                
+                    <div>${books.evaluation}</div>                  
+                    <button onclik="reviews">Reviews</button>
+                `;  //свойство вставить код в html
+                
+                container.appendChild(card); //метод добавленія элемент внутрь card_cont
+            });
+        })
+        .catch(error => console.error('Ошибка:', error));
+});
+
+function description(booksId){
+   console.lof(booksId);
+}
+
+function reviews(booksId){
+   console.lof(booksId);
 }
