@@ -5,7 +5,6 @@ let books = [
         author: "Antoine de Saint-Exupéry",
         year: 1942,
         evaluation: 4.7,
-        kategoria: "Фэнтези",
         image: "./images/litte.jpg",
         description: "book about..."
 
@@ -16,7 +15,8 @@ let books = [
         author: " Louisa May Alcott ",
         year: 1888,
         evaluation: 4.7,
-        image: "./images/wom.jpg"
+        image: "./images/wom.jpg",
+        description:"gfdhfgh"
     },
     {
         id:3,
@@ -24,21 +24,26 @@ let books = [
         author: " Jane Austen",
         year: 1817,
         evaluation: 4.7,
-        image: "./images/PandP.jpg"
+        image: "./images/PandP.jpg",
+        description:
     },
     {
+        id:4,
         title: "Harry Potter",
         author: "J.K. Rowling",
         year: 1997,
         evaluation: 4.7,
-        image: "./images/harry.jpg"
+        image: "./images/harry.jpg",
+        description:
     },
     {
+        id:5,
         title: "The little prince",
         author: "Antoine de Saint-Exupéry",
         year: 1942,
         evaluation: 4.7,
-        image: "./images/litte.jpg"
+        image: "./images/litte.jpg",
+        description:
     },
 ];
 
@@ -105,6 +110,7 @@ let books = [
 //   burger.classList.toggle('active');
 // });
 
+
 const btn = document.querySelector(".btn-toggle");
 btn.addEventListener("click", function() {
   document.body.classList.toggle("dark-team");
@@ -116,10 +122,8 @@ if (localStorage.getItem('team') === 'dark') {
 
 
 
-let star = 
-    document.getElementsByClassName("star");
-let output = 
-    document.getElementById("output");
+const star = document.getElementsByClassName("star"); //поменять на byId
+const output = document.getElementById("output");
 
 
 function stars(n) {
@@ -156,29 +160,16 @@ function liveSearch() {
   }
 }
 
-async function getBook(){
-  
-}
 
 
 
 
 
-// function cardBook(books){
 
-// const container = document.getElementById('book');
-
-//   for (let book of books){
-//     `<div>
-//         
-//     </div>`
-//     container.innerHTML += 
-//   }
-// }
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('Zolotariova_onloneLibrary.php')
-        .then(response => response.json())
+        .then(response => response.json())  //localStoreg
         .then(books => {
             const container = document.querySelector('.card_cont');
             
@@ -199,10 +190,3 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Ошибка:', error));
 });
 
-function description(booksId){
-   console.log(booksId);
-}
-
-function reviews(booksId){
-   console.log(booksId);
-}

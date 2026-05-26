@@ -13,7 +13,7 @@ const dbConfig = {  //как подключаемся к бд
   driver: "msnodesqlv8",
 };
 
-app.get("/userы", async (req, res) => { //запрос для пользователей
+app.get("/users", async (req, res) => { //запрос для пользователей
   const connection = await sql.connect(dbConfig);// подключение к бд
 
   const result = await connection.request().query("SELECT * FROM dbo.user"); //запись результата и отправляем запрос
