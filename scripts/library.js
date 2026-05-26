@@ -25,7 +25,7 @@ let books = [
         year: 1817,
         evaluation: 4.7,
         image: "./images/PandP.jpg",
-        description:
+        description:""
     },
     {
         id:4,
@@ -34,7 +34,7 @@ let books = [
         year: 1997,
         evaluation: 4.7,
         image: "./images/harry.jpg",
-        description:
+        description:""
     },
     {
         id:5,
@@ -43,7 +43,7 @@ let books = [
         year: 1942,
         evaluation: 4.7,
         image: "./images/litte.jpg",
-        description:
+        description:""
     },
 ];
 
@@ -189,4 +189,31 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Ошибка:', error));
 });
+
+
+
+
+  const openButtons = document.querySelectorAll('#open');
+  const closeButtons = document.querySelectorAll('#close');
+
+  openButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const dialogId = button.getAttribute('data-descript');
+    const dialog = document.getElementById(dialogId);
+    if (dialog) {
+      dialog.showModal();
+    }  
+  });
+});
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const dialog = button.closest('dialog');
+    if (dialog) {
+      dialog.close();
+    }
+  });
+});
+
+
 

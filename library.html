@@ -84,11 +84,22 @@
      <div class="card_cont" id="book">
 
      <div class="card" style="width: 14rem;">
-      <img src="./images/litte.jpg" class="card-img-top" onclick="description(1)"></a>
+      <img src="./images/litte.jpg" class="card-img-top" ></a>
       <div class=" card-body">
       <h5 class="card-title">The little prince</h5>
-      <p class="card-text discript">повесть о мальчике</p>
-      <button class="btn btn-primary" onclick="reviews(1)" data-name="The little prince" data-image="./images/litte.jpg">Reviews</button>
+      <button id="open" class="nav-link" data-descript="modalWindow">Описание</button>
+      <dialog id="modalWindow">
+      <p>Antoine de Saint-Exupéry's beloved novella The Little Prince has captivated readers around the world since its publication in 1943. This poetic tale of a young <br>prince who travels the universe in search of wisdom has been translated <br>
+      into over 300 languages and dialects, making it one of the most translated books in history.
+      <br> With its profound messages about love, loss, and the importance of seeing with the heart, The Little Prince continues<br> to resonate with both children and adults nearly 80 years after it was first written.<br>
+      The story was inspired by Saint-Exupéry's own experiences as an aviator, including a near-fatal crash in the Sahara Desert in 1935. <br>He wrote and illustrated The Little Prince while living in exile in New York during World War II, 
+      completing the manuscript in 1942. The book's simple yet elegant watercolor illustrations, <br>also done by Saint-Exupéry, are considered an integral part of the work.<br>
+      While The Little Prince has been adapted into various media over the decades, one of the most famous recent versions is the 2015 animated film directed by Mark Osborne. 
+      The movie combines stop-motion and computer animation <br>to bring the story to life for a new generation, while staying true to the spirit of Saint-Exupéry's<br> original work. With its timeless themes and imaginative storytelling,
+      <br>The Little Prince remains a treasured classic of world literature.<br></p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <button class="btn btn-primary"  data-name="The little prince" data-image="./images/litte.jpg">Reviews</button>
       <div id="reviews1" class="reviews"></div>
       </div>
       </div>                 
@@ -97,7 +108,23 @@
       <img src="./images/PandP.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">Pride and prejudice</h5>
-      <p class="card-text">Description</p>
+      <button id="open" class="nav-link" data-descript="modalWindow1">Описание</button>
+      <dialog id="modalWindow1">
+      <p>Romantic novel of manners by English author Jane Austen, published anonymously in three volumes in 1813.<br> 
+      A classic of English literature, written with incisive wit and superb character delineation, it follows Elizabeth Bennet,<br> 
+      the daughter of a country gentleman, as she navigates social expectations, family pressures, and her shifting—and initially<br> 
+      misjudged—relationship with the wealthy, reserved Fitzwilliam Darcy. It was Austen’s second published novel. Upon publication, Pride and Prejudice<br> 
+      was well received by critics and readers. The first edition sold out within the first year, and it never went out of print.<br>
+      The novel opens with one of the most famous lines in English literature: “It is a truth universally acknowledged, that a<br> 
+      single man in possession of a good fortune, must be in want of a wife.” The statement is seemingly what Mrs. Bennet thinks <br>
+      as she sets her sights on the newly arrived Bingley, who she is sure will make a suitable husband for one of her daughters. At a ball, <br>
+      Bingley takes an immediate interest in the beautiful and shy Jane. The encounter between his friend Darcy and Elizabeth is less cordial. <br>
+      Although Austen shows them intrigued by each other, she reverses the convention of first impressions: <br>
+      the pride of rank and fortune and prejudice against the social inferiority of Elizabeth’s <br>
+      family hold Darcy aloof, while the pride of self-respect and prejudice against Darcy’s snobbery hold Elizabeth equally aloof.<br>
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
       <a href="reviews.html" class="btn btn-primary">Reviews</a>
       </div>
       </div>
