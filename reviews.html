@@ -10,21 +10,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
-        <!-- <link rel="stylesheet" href="./styles/library.css"> -->
         <link rel="stylesheet" href="./styles/reviews.css">
     </head>
 <body class="container">
  <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="header">
-            <div class="burger" id="burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </div>
-            <nav class="menu"  id="menu">
-              <ul>
-                <li><a href="#" class="nav-link">Художественная литература</a></li>
+        <nav class="navbar navbar-expand bg-body-tertiary">
+  <div class="container-fluid navbar-nav">
+    <a href="library.html" class="nav-link nave-item"  id="main">Main</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="resultsList">
+        <li class="nav-item">
+          <a href="reviews.html" class="nav-link" style="text-decoration: underline;">
+          reviews</a>
+        </li>
+    
+        <li class="nav-item">
+          <a href="vxod.html" class="nav-link">account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="opendropdown()">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a href="#" class="nav-link">Художественная литература</a></li>
                 <li><a href="#" class="nav-link">Детективы</a></li>
                 <li><a href="#" class="nav-link">Триллеры</a></li>
                 <li><a href="#" class="nav-link">Научно-популярная</a></li>
@@ -33,36 +41,8 @@
                 <li><a href="#" class="nav-link">Фэнтези</a></li>
                 <li><a href="#" class="nav-link">Ужасы</a></li>
                 <li><a href="#" class="nav-link">Преключения</a></li>
-                </ul>
-            </nav>
-          </div>
-  <div class="container-fluid">
-    <a href="library.html" class="nav-link"  id="main">Main</a>
-    <button class="navbar-toggler" >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar" id="resultsList">
-        <li class="nav-item">
-          <a href="reviews.html" class="nav-link" style="text-decoration: underline;">
-          reviews</a>
-          </a>
-        </li>
-    
-        <li class="nav-item">
-          <a href="vxod.html" class="nav-link">account</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li> 
+        </li>
       </ul>  
       <button class="btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <img src="images/moon.png" class="team" id="moon">
@@ -81,8 +61,8 @@
 </nav>
       </header>
    
-  <form id="reviesForm">
-          <div class="ochert">
+  <form id="reviesForm" class="ochert">
+          <div >
                   <div class="input_wrapper">
                   <lable class="pole">Имя</lable>
                   <input name="name" class="input" required/>
@@ -103,7 +83,7 @@
                   <span onclick="stars(3)" class="star">★</span>
                   <span onclick="stars(4)" class="star">★</span>
                   <span onclick="stars(5)" class="star">★</span>
-                  <h3 id="output">Rating is: 0/5</h3>
+                  <h3 class="output">Rating is: 0/5</h3>
                 </div>
             
                 <div id="btn">

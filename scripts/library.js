@@ -1,12 +1,13 @@
-let books = [
+const books = [
     {
-        id:1,
+        id:"modalWindow",
         title: "The little prince",
         author: "Antoine de Saint-Exupéry",
         year: 1942,
         evaluation: 4.7,
         image: "./images/litte.jpg",
-        description: "book about..."
+        genre: "Фэнтези",
+        data_descript:"modalWindow"
 
     },
     {
@@ -16,7 +17,7 @@ let books = [
         year: 1888,
         evaluation: 4.7,
         image: "./images/wom.jpg",
-        description:"gfdhfgh"
+        genre:"Художественная литература"
     },
     {
         id:3,
@@ -25,7 +26,7 @@ let books = [
         year: 1817,
         evaluation: 4.7,
         image: "./images/PandP.jpg",
-        description:""
+        genre:"Художественная литература"
     },
     {
         id:4,
@@ -34,7 +35,7 @@ let books = [
         year: 1997,
         evaluation: 4.7,
         image: "./images/harry.jpg",
-        description:""
+        genre:"Фантастика"
     },
     {
         id:5,
@@ -43,72 +44,11 @@ let books = [
         year: 1942,
         evaluation: 4.7,
         image: "./images/litte.jpg",
-        description:""
+        genre:""
     },
 ];
 
 
-
-
-
-
-
-// function addBookToLibrary(title, author) {
-//     const book = { title, author };
-//     myLibrary.push(book);
-//     renderLibrary();
-//     localStorage.setItem('library', JSON.stringify(myLibrary));
-// }
-
-// function loadPage(page, options = {}) {
-
-//     if (options.changeHash === undefined) {
-//         options.changeHash = true;
-//     }
-//     if (options.next === undefined) {
-//         options.next = true;
-//     }
-//     if (options.scroll === undefined) {
-//         options.scroll = true;
-//     }
-//     if (options.changeHash) {
-//         document.location.hash = "#" + page.hash;
-//     }
-//     if ($("#" + page.hash).size() == 0) {
-//         if (options.next) {
-//             $("#content").append('<div id="' + page.hash + '"></div>');
-//         } else {
-//             $("#content").prepend('<div id="' + page.hash + '"></div>');
-//         }
-//         $("#loader").show();
-//         jQuery.ajax({
-//             url: "/book/" + page.file,
-//             success: function(result) {
-//                 var converter = new showdown.Converter();
-//                 var html = converter.makeHtml(result);
-//                 $("#" + page.hash).html(html);
-//                 if(page.animation!==undefined){
-//                   $("#" + page.hash).prepend('<div id="animation-'+page.hash+'" style="'+page.animation.style+'"></div>');
-//                   var vivus=new Vivus('animation-'+page.hash, {duration: page.animation.duration, file: '/svg/'+page.animation.svg, type:'oneByOne'}, finishedDrawing);
-//                 }
-//                 $("#loader").fadeOut();
-//                 if (options.scroll) {
-//                     $('html,body').animate({
-//                         scrollTop: $("#" + page.hash).offset().top
-//                     }, 300, 'swing');
-//                 }
-//             }
-//         });
-//     }
-// }
-
-// const burger = document.getElementById('burger');
-// const menu = document.getElementById('menu');
-
-// burger.addEventListener('click', () => {
-//   menu.classList.toggle('active');
-//   burger.classList.toggle('active');
-// });
 
 
 const btn = document.querySelector(".btn-toggle");
@@ -122,8 +62,8 @@ if (localStorage.getItem('team') === 'dark') {
 
 
 
-const star = document.getElementsByClassName("star"); //поменять на byId
-const output = document.getElementById("output");
+const star = document.getElementsByClassName("star"); 
+const output = document.getElementsByClassName("output");
 
 
 function stars(n) {
@@ -147,9 +87,11 @@ function remove() {
     }
 }
 
+
+
 function liveSearch() {
-  let cards = document.querySelectorAll('.card')
-  let search_query = document.getElementById("searchbox").value;
+  const cards = document.querySelectorAll('.card')
+  const search_query = document.getElementById("searchbox").value;
   for (var i = 0; i < cards.length; i++) {
     if(cards[i].innerText.toLowerCase()
       .includes(search_query.toLowerCase())) {
@@ -161,33 +103,24 @@ function liveSearch() {
 }
 
 
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('Zolotariova_onloneLibrary.php')
-        .then(response => response.json())  //localStoreg
-        .then(books => {
-            const container = document.querySelector('.card_cont');
-            
-            books.forEach(book => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                
-                card.innerHTML = `
-                    <img src="${books.image}" onclick="description('${books.id}')">
-                    <h5>${books.title}</h5>                
-                    <div>${books.evaluation}</div>                  
-                    <button onclik="reviews('${books.id}')">Reviews</button>
-                `;  //свойство вставить код в html
-                
-                container.appendChild(card); //метод добавленія элемент внутрь card_cont
-            });
-        })
-        .catch(error => console.error('Ошибка:', error));
+  const category = document.querySelectorAll('#dropdown .dropdown-link');
+  const search = document.getElementById('searchbox');
+
+  category.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); 
+
+      const selectedCategory = link.getAttribute('data-catedoria');
+
+      if (search) {
+        search.value = selectedCategory;
+      }
+      if (typeof liveSearch === 'function') {
+        liveSearch();
+      }
+    });
+  });
 });
 
 
@@ -216,4 +149,7 @@ closeButtons.forEach(button => {
 });
 
 
+function opendropdown(){
+    document.getElementById('dropdown').classList.toggle("show");
+}
 

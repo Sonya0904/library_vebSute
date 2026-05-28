@@ -19,6 +19,16 @@ h1{
     flex-wrap: wrap;
 }
 
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+
+.see{
+    display: block;
+}
+
 .reviews{display: none;}
 
 .discript{display: none;}
@@ -34,41 +44,6 @@ h1{
 
 .card-title{
     height: 55px;
-}
-
-.btn-outline-success {
- border-color: #a5dafd;
- color: #a5dafd;
- 
-}
-
-.btn-outline-success:hover{
- color: #000000;
- background-color: #a5dafd;
- border-color: #a5dafd;
-}
-
-.burger {
- cursor: pointer;
- display: flex;
- flex-direction: column;
- gap: 5px;
- width: 30px;
- margin-left: 5px;
-}
-
-.burger__line {
- height: 3px;
- background-color: black;
- transition: all 0.3s; 
-}
-
-.menu {
- display: none;
-}
-
-.menu.active {
- display: block; 
 }
 
 body.dark-team {
@@ -104,4 +79,91 @@ body {
    display: none;
 }
 
+.catedoria{
+    font-size: 14px;
+}
+
 .is-hidden { display: none; }
+
+
+
+@media (max-width: 992px) {
+h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    text-align: center; 
+  }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.btn-toggle {
+    margin-left: 0;
+    margin: 15px auto;
+  }
+
+.ochert lable{
+    margin-bottom: -5px;
+    font-size: 15px;
+  }
+
+.ochert {
+    margin: 20px auto;
+    padding: 30px 20px; 
+    width: 92%; 
+    max-width: 360px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+.star {
+    font-size: 7vh;
+    display: inline-block;
+  }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.navbar-nav{
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: left !important;
+  gap: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-link{
+  font-size: 16px;
+  padding: 2px 4px;
+}
+
+.nav-item{
+  display: inline-block;
+}
+
+.team{
+    width: 30px;
+    height: 30px;
+    align-self:center;
+}
+
+#searchbox { 
+  width: 140px; 
+  font-size: 16px; 
+}
+}

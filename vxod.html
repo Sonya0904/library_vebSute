@@ -11,7 +11,7 @@
 
         <h1>Вход в аккаунт</h1>
 
-        <form id="login" onclick="login()">
+        <form id="login" onsubmit="login(event)">
             <div class="ochert">
                 <div class="input_wrapper">
                 <lable class="pole">Имя пользователя</lable>
@@ -20,14 +20,12 @@
 
                 <div class="input_wrapper">
                 <lable class="pole" class="otst">Пароль</lable>
-                <input name="password"  class="input" id="user_password" required/>
+                <input name="password"  class="input" id="user_password" required type="password"/>
                 </div>
             </div>
 
             <div id="btn">
-                <button class="btn" >
-                <a href="library.html" class="a">Сохранить</button>
-                </a>
+                <button class="btn" type="submit">Войти</button>
             </div>
         </form>
         

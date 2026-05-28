@@ -10,7 +10,7 @@
     <div class="card">
         <h1>Зарегистрироваться</h1>
         
-        <form id="registration" onclick="registration()">
+        <form id="registration" onsubmit="registration(event)">
             <div class="ochert">
                 <div class="input_wrapper">
                 <lable class="pole">Имя</lable>
@@ -29,9 +29,7 @@
             </div>
 
             <div id="btn">
-                <button class="btn" >
-                <a href="library.html" class="a">Сохранить</button>
-                </a>
+                <button class="btn" type="submit">Сохранить</button>
             </div>
         </form>
         

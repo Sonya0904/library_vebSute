@@ -14,28 +14,8 @@
   </head>
 <body class="container">
  <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="header">
-            <div class="burger" id="burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </div>
-            <nav class="menu"  id="menu">
-              <ul>
-                <li><a href="#" class="nav-link">Художественная литература</a></li>
-                <li><a href="#" class="nav-link">Детективы</a></li>
-                <li><a href="#" class="nav-link">Триллеры</a></li>
-                <li><a href="#" class="nav-link">Научно-популярная</a></li>
-                <li><a href="#" class="nav-link">Биографии</a></li>
-                <li><a href="#" class="nav-link">Фантастика</a></li>
-                <li><a href="#" class="nav-link">Фэнтези</a></li>
-                <li><a href="#" class="nav-link">Ужасы</a></li>
-                <li><a href="#" class="nav-link">Преключения</a></li>
-                </ul>
-            </nav>
-          </div>
-  <div class="container-fluid">
+        <nav class="navbar navbar-expand bg-body-tertiary">
+  <div class="container-fluid navbar-nav">
     <a href="library.html" class="nav-link" style="text-decoration: underline;" id="main">Main</a>
  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,21 +23,25 @@
         <li class="nav-item">
           <a href="reviews.html" class="nav-link" >
           reviews</a>
-          </a>
         </li>
     
         <li class="nav-item">
           <a href="vxod.html" class="nav-link">account</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="nav-link dropdown-toggle dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="opendropdown()">
             Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </button>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a href="#" class="nav-link dropdown-link" data-catedoria="Художественная литература">Художественная литература</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Детектив">Детективы</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Триллеры">Триллеры</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Научно-популярная">Научно-популярная</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Биографии">Биографии</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Фантастика">Фантастика</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Фэнтези">Фэнтези</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Ужасы">Ужасы</a></li>
+                <li><a href="#" class="nav-link dropdown-link" data-catedoria="Преключения">Преключения</a></li>
           </ul>
         </li> 
       </ul>  
@@ -84,116 +68,180 @@
      <div class="card_cont" id="book">
 
      <div class="card" style="width: 14rem;">
-      <img src="./images/litte.jpg" class="card-img-top" ></a>
+      <img src="./images/litte.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">The little prince</h5>
+      <p class="catedoria">Фэнтези</p>
       <button id="open" class="nav-link" data-descript="modalWindow">Описание</button>
       <dialog id="modalWindow">
-      <p>Antoine de Saint-Exupéry's beloved novella The Little Prince has captivated readers around the world since its publication in 1943. This poetic tale of a young <br>prince who travels the universe in search of wisdom has been translated <br>
-      into over 300 languages and dialects, making it one of the most translated books in history.
-      <br> With its profound messages about love, loss, and the importance of seeing with the heart, The Little Prince continues<br> to resonate with both children and adults nearly 80 years after it was first written.<br>
-      The story was inspired by Saint-Exupéry's own experiences as an aviator, including a near-fatal crash in the Sahara Desert in 1935. <br>He wrote and illustrated The Little Prince while living in exile in New York during World War II, 
-      completing the manuscript in 1942. The book's simple yet elegant watercolor illustrations, <br>also done by Saint-Exupéry, are considered an integral part of the work.<br>
-      While The Little Prince has been adapted into various media over the decades, one of the most famous recent versions is the 2015 animated film directed by Mark Osborne. 
-      The movie combines stop-motion and computer animation <br>to bring the story to life for a new generation, while staying true to the spirit of Saint-Exupéry's<br> original work. With its timeless themes and imaginative storytelling,
-      <br>The Little Prince remains a treasured classic of world literature.<br></p>
+      <p>философская повесть-притча Антуана де Сент-Экзюпери. По сюжету летчик, <br>совершивший 
+        вынужденную посадку в пустыне, встречает мальчика сдалекой планеты. <br>Путешествуя по мирам, 
+        герой познает мир, учится дружбе, любви и ответственности за тех, кого приручил</p>
       <button id="close" class="btn btn-primary">Закрыть</button>
       </dialog>
-      <button class="btn btn-primary"  data-name="The little prince" data-image="./images/litte.jpg">Reviews</button>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews" data-name="The little prince" data-image="./images/litte.jpg">Reviews</a>
       <div id="reviews1" class="reviews"></div>
       </div>
       </div>                 
 
-      <div class="card" style="width: 14rem;"> <a href="pride.html" class="">
+      <div class="card" style="width: 14rem;" data-catedoria="Художественная литература">
       <img src="./images/PandP.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">Pride and prejudice</h5>
+      <p class="catedoria">Фэнтези</p>
       <button id="open" class="nav-link" data-descript="modalWindow1">Описание</button>
       <dialog id="modalWindow1">
-      <p>Romantic novel of manners by English author Jane Austen, published anonymously in three volumes in 1813.<br> 
-      A classic of English literature, written with incisive wit and superb character delineation, it follows Elizabeth Bennet,<br> 
-      the daughter of a country gentleman, as she navigates social expectations, family pressures, and her shifting—and initially<br> 
-      misjudged—relationship with the wealthy, reserved Fitzwilliam Darcy. It was Austen’s second published novel. Upon publication, Pride and Prejudice<br> 
-      was well received by critics and readers. The first edition sold out within the first year, and it never went out of print.<br>
-      The novel opens with one of the most famous lines in English literature: “It is a truth universally acknowledged, that a<br> 
-      single man in possession of a good fortune, must be in want of a wife.” The statement is seemingly what Mrs. Bennet thinks <br>
-      as she sets her sights on the newly arrived Bingley, who she is sure will make a suitable husband for one of her daughters. At a ball, <br>
-      Bingley takes an immediate interest in the beautiful and shy Jane. The encounter between his friend Darcy and Elizabeth is less cordial. <br>
-      Although Austen shows them intrigued by each other, she reverses the convention of first impressions: <br>
-      the pride of rank and fortune and prejudice against the social inferiority of Elizabeth’s <br>
-      family hold Darcy aloof, while the pride of self-respect and prejudice against Darcy’s snobbery hold Elizabeth equally aloof.<br>
+      <p>Гордость женщины, практически нищей и совершенно свободной — в своей бедности, в своей иронии, в силе своего характера...<br> 
+        Есть ли нечто равное такой гордости?.. Предубеждение женщины, почти не способной уже, по привычке отвечать ударом на удар, <br>
+        поверить в искренность мужского чувства и перестать об этом думать.<br> Это — «Гордость и предубеждение» Джейн Остин. Книга, без которой сейчас 
+        не существовало бы,<br> наверное, ни «психологического» романа, ни «феминистской» литературы, ни — попросту — «элитной» прозы как таковой!
       </p>
       <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews" data-name="Pride and prejudice" data-image="./images/PandP.jpg">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> 
+      <img src="./images/wom.jpg" class="card-img-top" >
+      <div class=" card-body">
+      <h5 class="card-title">Little women</h5>
+      <p class="catedoria">Художественная литература</p>
+      <button id="open" class="nav-link" data-descript="modalWindow2">Описание</button>
+      <dialog id="modalWindow2">
+      <p>семейная сага, повествующая о судьбах четырех сестер Марч – добросердечной красавицы Мег, "сорванца в юбке" Джо, кроткой и нежной Бесс и<br> талантливой фантазерки Эми.
+      Гражданская война идет далеко на Юге, но ее грозные отголоски <br> достигли и дружной семьи небогатого провинциального пастора Марча 
+      – сам он ушел на фронт полковым священником, и жена с дочерьми, как и множество других<br> американок, день за днем живут в страхе 
+      трагических известий. Однако никакая война не в силах помешать девочкам взрослеть и превращаться<br> в юных девушек. 
+      Девушек с их обычными и трогательными девичьими мечтами и надеждами, радостями, горестями и, конечно, первой любовью…
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
+      </div>
+      </div>
+
+      <div class="card" style="width: 14rem;"> 
+        <img src="./images/13651011_1_1984.jpg" class="card-img-top">
+      <div class=" card-body">
+      <h5 class="card-title">1984</h5>
+      <p class="catedoria">Художественная литература</p>
+      <button id="open" class="nav-link" data-descript="modalWindow3">Описание</button>
+      <dialog id="modalWindow3">
+      <p>культовая антиутопия Джорджа Оруэлла, предупреждающая об опасности тоталитаризма. Сюжет разворачивается в мире,<br> поделенном 
+        между тремя враждующими сверхдержавами. В центре истории Уинстон Смит — мелкий партийный чиновник в <br>тоталитарной Океании, 
+        который тайно решается на бунт против вездесущего Большого Брата и системы.
+      </p>
+      <button id="close" class="btn btn-primary dtn-reviews">Закрыть</button>
       </dialog>
       <a href="reviews.html" class="btn btn-primary">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <img src="./images/wom.jpg" class="card-img-top">
-      <div class=" card-body">
-      <h5 class="card-title">Little women</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
-      </div>
-      </div>
-
-      <div class="card" style="width: 14rem;"> <img src="./images/13651011_1_1984.jpg" class="card-img-top">
-      <div class=" card-body">
-      <h5 class="card-title">1984</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
-      </div>
-      </div>
-
-      <div class="card" style="width: 14rem;"> <img src="./images/harry.jpg" class="card-img-top">
+      <div class="card" style="width: 14rem;"> 
+        <img src="./images/harry.jpg" class="card-img-top">
       <div class=" card-body">
       <h5 class="card-title">Harry Potter</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Фантастика</p>
+      <button id="open" class="nav-link" data-descript="modalWindow4">Описание</button>
+      <dialog id="modalWindow4">
+      <p>Сирота Гарри Поттер в 11 лет узнаёт, что он — знаменитый волшебник. Он отправляется в школу чародейства и волшебства<br> 
+        «Хогвартс», где обретает друзей. Вместе с Роном и Гермионой Гарри раскрывает тайну Философского камня и <br>предотвращает 
+        возвращение злого лорда Волан-де-Морта, виновного в гибели его родителей.
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <img src="./images/Без названия (4).jpg" class="card-img-top">
+      <div class="card" style="width: 14rem;"> 
+      <img src="./images/Без названия (4).jpg" class="card-img-top">
       <div class=" card-body">
       <h5 class="card-title">Harry Potter</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Фантастика</p>
+      <button id="open" class="nav-link" data-descript="modalWindow5">Описание</button>
+      <dialog id="modalWindow5">
+      <p>Это вторая книга о приключениях Гарри Поттера. Он снова вступает в отчаянную схватку со злом. На этот раз враг его <br>так 
+        силен, что надежды на победу почти нет. В Школе чародейства и волшебства «Хогвартс» происходят тревожные события.<br> 
+        Кто-то нападает на учеников школы, и преподаватели подозревают, что это таинственное чудовище, которое скрывается в <br>
+        легендарной Тайной комнате. Гарри Поттер и его друзья разгадывают загадку Тайной комнаты, и теперь Гарри снова предстоит<br> 
+        сразиться с лордом Волан-де-Мортом. Сумеет ли он победить на этот раз?...
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <div class="card" style="width: 14rem;">
       <img src="./images/m&m.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">The Master and Margarita</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Художественная литература</p>
+      <button id="open" class="nav-link" data-descript="modalWindow6">Описание</button>
+      <dialog id="modalWindow6">
+      <p>это завораживающий мистический роман, где сатира на советский быт 1930-х годов переплетается с библейской притчей <br>
+        и трагической историей любви. Произведение исследует вечные темы борьбы добра со зла, прощения, смерти, бессмертия и<br> 
+        истинного творчества. 
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <div class="card" style="width: 14rem;">
       <img src="./images/R&J.jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">Romeo and Juliet</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Художественная литература</p>
+      <button id="open" class="nav-link" data-descript="modalWindow7">Описание</button>
+      <dialog id="modalWindow7">
+      <p>бессмертная трагедия Уильяма Шекспира о любви юноши и девушки из двух враждующих веронских родов. <br>
+        Их искреннее чувство становится преградой для давней семейной вендетты, приводя к трагической развязке,<br>
+        которая в итоге примиряет противоборствующие семьи
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <div class="card" style="width: 14rem;"> 
       <img src="./images/Без названия (6).jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">The Count of Monte Cristo</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Художественная литература</p>
+      <button id="open" class="nav-link" data-descript="modalWindow8">Описание</button>
+      <dialog id="modalWindow8">
+      <p>Молодой моряк Эдмон Дантес считал себя счастливчиком — прибыльное дело, красавица-невеста. Но власть во Франции <br>
+        меняется так же часто, как ветер. Донос завистника — и невинный Эдмон оказывается за решёткой на долгих <br>
+        четырнадцать лет... Пройдя через каменные мешки замка Иф, закалив волю, разбогатев на пиратских кладах, герой под<br> 
+        псевдонимом «Граф Монте-Кристо» возвращается во Францию, чтобы отомстить предателям, сломавшем ему жизнь. Не убить <br>
+        их — он не настолько милосерден. Граф использует интриги, подкуп, влияние и провокации, чтобы сломать жизнь им самим...
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 
-      <div class="card" style="width: 14rem;"> <a href="little_prince.html" class="">
+      <div class="card" style="width: 14rem;"> 
       <img src="./images/Без названия (7).jpg" class="card-img-top"></a>
       <div class=" card-body">
       <h5 class="card-title">Crime and Punishment</h5>
-      <p class="card-text">Description</p>
-      <a href="reviews.html" class="btn btn-primary">Reviews</a>
+      <p class="catedoria">Художественная литература/Детектив</p>
+      <button id="open" class="nav-link" data-descript="modalWindow9">Описание</button>
+      <dialog id="modalWindow9">
+      <p>социально-философский роман Ф. М. Достоевского, исследующий муки совести и искупление. Бедный студент<br> 
+        Родион Раскольников убивает старуху-процентщицу, чтобы проверить свою теорию о «право имеющих» людях. <br>
+        Это преступление приводит его к тяжелейшим душевным терзаниям, полному одиночеству и, наконец, к духовному<br>
+        возрождению через раскаяние и веру.
+      </p>
+      <button id="close" class="btn btn-primary">Закрыть</button>
+      </dialog>
+      <a href="reviews.html" class="btn btn-primary dtn-reviews">Reviews</a>
       </div>
       </div>
 </div>
